@@ -49,3 +49,18 @@
           outline: none;
           border-color: #D4AF37;
       }
+
+      /* page  vanille*/
+      .custom-modal .modal-dialog {
+        max-width: 80%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .custom-modal .modal-content {
+        height: 100%;
+      }
+
+      
