@@ -154,7 +154,7 @@ $_POST["password"] === $_POST["conf_password"]){
             $_SESSION["fname"] = $user["fname"];
             $_SESSION["age"] = $user["age"];
             $_SESSION["photo"] = $user["photo"];
-            header("Location: Jiroof.html");
+            header("Location: index.html");
             exit();
         }
         else{

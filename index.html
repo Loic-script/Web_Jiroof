@@ -129,7 +129,7 @@
           </nav>
 
           <div class="flex items-center space-x-6">
-            <div class="relative">
+            <!-- <div class="relative">
               <input
                 type="text"
                 placeholder="Rechercher..."
@@ -140,21 +140,14 @@
               >
                 <i class="ri-search-line"></i>
               </div>
-            </div>
+            </div> -->
 
             <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center text-primary hover:text-white transition-colors"
-              >
-                <i class="ri-shopping-cart-2-line ri-lg"></i>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 flex items-center justify-center text-primary hover:text-white transition-colors"
-              >
-                <i class="ri-user-line ri-lg"></i>
-              </a>
+              <a href="login.php"><button
+            class="bg-primary text-black font-semibold px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
+          >
+            Login
+          </button></a>
             </div>
 
             <button
@@ -292,146 +285,10 @@
     </section>
 
     <!-- Featured Products Section -->
-    <section class="py-20 bg-gray-950">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white">
-          Produits <span class="text-primary">Vedettes</span>
-        </h2>
-        <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-          Découvrez notre sélection de produits les plus populaires, choisis
-          pour leur qualité exceptionnelle.
-        </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Product 1 -->
-          <div
-            class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300"
-          >
-            <div class="h-64 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                alt="Gousses de Vanille Premium"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-white mb-2">
-                Gousses de Vanille Premium
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Lot de 10 gousses de Madagascar
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-primary font-bold text-xl">42,90 €</span>
-                <button
-                  class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                >
-                  Ajouter au panier
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 2 -->
-          <div
-            class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300"
-          >
-            <div class="h-64 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Organic%20whole%20cloves%20in%20a%20luxurious%20small%20golden%20bowl%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20of%20aromatic%20dried%20clove%20buds.%20Professional%20spice%20photography%20with%20dramatic%20lighting%20highlighting%20the%20rich%20brown%20color%20and%20texture.&width=500&height=500&seq=prod2&orientation=squarish"
-                alt="Girofle Bio Entier"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-white mb-2">
-                Girofle Bio Entier
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Sachet de 100g - Origine Zanzibar
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-primary font-bold text-xl">12,50 €</span>
-                <button
-                  class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                >
-                  Ajouter au panier
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 3 -->
-          <div
-            class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300"
-          >
-            <div class="h-64 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Luxury%20amber%20glass%20bottle%20of%20vanilla%20essential%20oil%20with%20dropper%20on%20a%20black%20surface%20with%20golden%20light%20reflections.%20Professional%20product%20photography%20with%20dramatic%20lighting%20showing%20the%20rich%20amber%20color%20of%20the%20oil%20against%20dark%20background.&width=500&height=500&seq=prod3&orientation=squarish"
-                alt="Huile Essentielle de Vanille"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-white mb-2">
-                Huile Essentielle de Vanille
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Flacon 30ml - 100% Pure et Naturelle
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-primary font-bold text-xl">24,90 €</span>
-                <button
-                  class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                >
-                  Ajouter au panier
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 4 -->
-          <div
-            class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300"
-          >
-            <div class="h-64 overflow-hidden">
-              <img
-                src="https://readdy.ai/api/search-image?query=Luxury%20amber%20glass%20bottle%20of%20clove%20essential%20oil%20with%20dropper%20on%20a%20black%20surface%20with%20golden%20light%20reflections.%20Professional%20product%20photography%20with%20dramatic%20lighting%20showing%20the%20rich%20amber%20color%20of%20the%20oil%20against%20dark%20background.&width=500&height=500&seq=prod4&orientation=squarish"
-                alt="Huile Essentielle de Girofle"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-white mb-2">
-                Huile Essentielle de Girofle
-              </h3>
-              <p class="text-gray-400 text-sm mb-3">
-                Flacon 15ml - 100% Pure et Naturelle
-              </p>
-              <div class="flex justify-between items-center">
-                <span class="text-primary font-bold text-xl">18,90 €</span>
-                <button
-                  class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                >
-                  Ajouter au panier
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-12">
-          <button
-            class="border-2 border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-black transition-all whitespace-nowrap"
-          >
-            Voir tous les produits
-          </button>
-        </div>
-      </div>
-    </section>
 
     <!-- Advantages Section -->
-    <section class="py-20 bg-black">
+    <section class="py-20 bg-black" style="background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('https://readdy.ai/api/search-image?query=Elegant%20arrangement%20of%20vanilla%20pods%2C%20cloves%2C%20and%20essential%20oil%20bottles%20with%20golden%20light%20accents%20on%20a%20black%20background.%20Luxury%20spices%20and%20aromatic%20oils%20with%20subtle%20golden%20reflections%20creating%20a%20premium%20atmosphere.%20Professional%20product%20photography%20with%20dramatic%20lighting.&width=1600&height=400&seq=newsletter1&orientation=landscape'); background-size: cover; background-position: center;">
       <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center mb-4 text-white">
           Nos <span class="text-primary">Engagements</span>
@@ -508,140 +365,9 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-950">
-      <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white">
-          Ce que disent nos <span class="text-primary">Clients</span>
-        </h2>
-        <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-          Découvrez les témoignages de nos clients satisfaits qui ont choisi la
-          qualité Jiroof.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Testimonial 1 -->
-          <div class="bg-black p-8 rounded shadow-lg border border-gray-800">
-            <div class="flex items-center mb-4">
-              <div class="text-primary">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-            </div>
-            <p class="text-gray-300 mb-6 italic">
-              "La vanille de Madagascar que j'ai commandée est tout simplement
-              exceptionnelle. L'arôme est incroyablement riche et a transformé
-              mes pâtisseries. Le service client a également été remarquable."
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-primary mr-4"
-              >
-                <i class="ri-user-line ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-semibold">Sophie Moreau</h4>
-                <p class="text-gray-400 text-sm">Chef Pâtissière</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 2 -->
-          <div class="bg-black p-8 rounded shadow-lg border border-gray-800">
-            <div class="flex items-center mb-4">
-              <div class="text-primary">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-            </div>
-            <p class="text-gray-300 mb-6 italic">
-              "Les huiles essentielles de Jiroof sont d'une pureté remarquable.
-              J'utilise l'huile de girofle pour mes massages thérapeutiques et
-              mes clients sont enchantés par ses bienfaits."
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-primary mr-4"
-              >
-                <i class="ri-user-line ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-semibold">Antoine Dubois</h4>
-                <p class="text-gray-400 text-sm">Massothérapeute</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="bg-black p-8 rounded shadow-lg border border-gray-800">
-            <div class="flex items-center mb-4">
-              <div class="text-primary">
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-                <i class="ri-star-fill"></i>
-              </div>
-            </div>
-            <p class="text-gray-300 mb-6 italic">
-              "Je suis impressionnée par la qualité des produits Jiroof. Le
-              girofle bio que j'ai acheté a un arôme incomparable. La livraison
-              a été rapide et l'emballage très soigné."
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-primary mr-4"
-              >
-                <i class="ri-user-line ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="text-white font-semibold">Émilie Laurent</h4>
-                <p class="text-gray-400 text-sm">Aromathérapeute</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- Newsletter Section -->
-    <section
-      class="py-20 bg-black"
-      style="background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url('https://readdy.ai/api/search-image?query=Elegant%20arrangement%20of%20vanilla%20pods%2C%20cloves%2C%20and%20essential%20oil%20bottles%20with%20golden%20light%20accents%20on%20a%20black%20background.%20Luxury%20spices%20and%20aromatic%20oils%20with%20subtle%20golden%20reflections%20creating%20a%20premium%20atmosphere.%20Professional%20product%20photography%20with%20dramatic%20lighting.&width=1600&height=400&seq=newsletter1&orientation=landscape'); background-size: cover; background-position: center;"
-    >
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="text-4xl font-bold mb-4 text-white">
-            Restez <span class="text-primary">Informé</span>
-          </h2>
-          <p class="text-gray-300 mb-8">
-            Inscrivez-vous à notre newsletter pour recevoir nos offres
-            exclusives, nos conseils d'utilisation et nos nouvelles sélections.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <input
-              type="email"
-              placeholder="Votre adresse email"
-              class="newsletter-input bg-transparent border border-primary rounded-button px-4 py-3 text-white w-full sm:w-96"
-            />
-            <button
-              class="bg-primary text-black font-semibold px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-            >
-              S'abonner
-            </button>
-          </div>
-          <p class="text-gray-400 text-sm mt-4">
-            En vous inscrivant, vous acceptez notre politique de
-            confidentialité. Nous ne partagerons jamais vos informations.
-          </p>
-        </div>
-      </div>
-    </section>
+  
 
     <!-- Footer -->
     <footer class="bg-black pt-16 pb-8 border-t border-gray-800">
