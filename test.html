@@ -1,96 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fenêtre centrée</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* Fenêtre de premier plan (hidden par défaut) */
-    .popup {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%;
-      height: 80vh;
-      background-color: #0f2138; /* bleu gris */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-      display: none;
-      z-index: 1000;
-      padding: 20px;
-    }
-
-    /* Fond assombri derrière */
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-      z-index: 999;
-    }
-
-    .btn {
-      padding: 10px 20px;
-      background-color: #007bff;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #0056b3;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Responsive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-white">
 
-  <button class="btn" onclick="openPopup()">Ouvrir la fenêtre</button>
+  <!-- Navbar -->
+  <header class="bg-black p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-white">Jiroof</h1>
 
-  <!-- Overlay -->
-  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <!-- Bouton burger visible en mobile -->
+    <button id="menu-toggle" class="md:hidden text-white text-2xl">
+      ☰
+    </button>
 
-  <!-- Fenêtre centrée -->
-  <div class="popup" id="popup">
-    <button class="close-btn" onclick="closePopup()">×</button>
-    <h2>Fenêtre centrée</h2>
-    <p>Contenu de la fenêtre avec 80% de largeur et 80vh de hauteur.</p>
-  </div>
+    <!-- Menu de navigation -->
+    <nav id="nav-menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
+      <a href="#home" class="hover:text-yellow-400">Home</a>
+      <a href="#products" class="hover:text-yellow-400">Products</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Contenu -->
+  <main class="p-4">
+    <h2 class="text-2xl font-semibold">Bienvenue sur le site Jiroof</h2>
+    <p class="mt-2">Contenu de la page...</p>
+  </main>
+
+  <!-- Script JS -->
   <script>
-    function openPopup() {
-      document.getElementById("popup").style.display = "block";
-      document.getElementById("overlay").style.display = "block";
-    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
 
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
-    }
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+      });
+    });
   </script>
 
 </body>

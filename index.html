@@ -24,8 +24,8 @@
   </head>
   <body>
 
-    <header class="bg-black shadow-md">
-      <div class="container mx-auto px-4 py-4">
+    <header class="bg-black shadow-md" id="nav-bar">
+      <div class="container mx-auto px-4 py-4" >
         <div class="flex justify-between items-center">
           <div class="flex items-center">
             <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
@@ -33,7 +33,7 @@
             >
           </div>
 
-          <nav class="hidden md:flex space-x-8">
+          <nav class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
             <a
               href="#home"
               class="nav-link text-white hover:text-primary transition-colors"
@@ -71,10 +71,8 @@
             </div> -->
 
 
-            <button
-              class="md:hidden w-10 h-10 flex items-center justify-center text-primary"
-            >
-              <i class="ri-menu-line ri-lg"></i>
+            <button id="menu-toggle" class="md:hidden text-white text-2xl">
+              ☰
             </button>
           </div>
         </div>
@@ -88,7 +86,7 @@
           <h1
             class="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight"
           >
-          Discover the<span class="text-primary">Excellence</span>  of Natural Spices
+          Discover the<span class="text-primary"> Excellence</span>  of Natural Spices
           </h1>
           <p class="text-xl mb-8 text-gray-200">
             Exceptional products carefully selected to enhance your senses and enrich your daily life.

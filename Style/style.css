@@ -16,6 +16,12 @@
         width: 9rem;
         height: auto;
     }
+    #nav-bar{
+        z-index: 1000;
+        position: fixed;
+        width: 100%;
+    }
+    
       .hero-section {
           background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('../pic/bg_acceuille.png');
           background-size: cover;

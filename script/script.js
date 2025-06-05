@@ -1,44 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".ri-menu-line").parentElement;
-    const nav = document.querySelector("nav");
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.querySelector("nav");
 
-    menuButton.addEventListener("click", function () {
-        if (nav.classList.contains("hidden")) {
-            nav.classList.remove("hidden");
-            nav.classList.add(
-                "flex",
-                "flex-col",
-                "absolute",
-                "top-16",
-                "right-4",
-                "bg-black",
-                "border",
-                "border-gray-800",
-                "p-4",
-                "rounded",
-                "shadow-lg",
-                "z-50",
-                "space-y-4",
-            );
-        } else {
-            nav.classList.add("hidden");
-            nav.classList.remove(
-                "flex",
-                "flex-col",
-                "absolute",
-                "top-16",
-                "right-4",
-                "bg-black",
-                "border",
-                "border-gray-800",
-                "p-4",
-                "rounded",
-                "shadow-lg",
-                "z-50",
-                "space-y-4",
-            );
-        }
-    });
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+      });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
