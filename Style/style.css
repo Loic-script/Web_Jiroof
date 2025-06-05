@@ -1,0 +1,60 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+        color: #fff;
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Playfair Display', serif;
+      }
+
+    #logo {
+        width: 9rem;
+        height: auto;
+    }
+      .hero-section {
+          background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('../pic/bg_acceuille.png');
+          background-size: cover;
+          background-position: center;
+      }
+      .search-input:focus {
+          outline: none;
+          border-color: #D4AF37;
+      }
+      .nav-link {
+          position: relative;
+      }
+      .nav-link::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: #D4AF37;
+          transition: width 0.3s ease;
+      }
+      .nav-link:hover::after {
+          width: 100%;
+      }
+      .product-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+      }
+      .product-card img {
+          transition: transform 0.5s ease;
+      }
+      .product-card:hover img {
+          transform: scale(1.05);
+      }
+      .category-card:hover .category-overlay {
+          opacity: 0.9;
+      }
+      .newsletter-input:focus {
+          outline: none;
+          border-color: #D4AF37;
+      }
