@@ -154,7 +154,7 @@ $_POST["password"] === $_POST["conf_password"]){
             $_SESSION["fname"] = $user["fname"];
             $_SESSION["age"] = $user["age"];
             $_SESSION["photo"] = $user["photo"];
-            header("Location: index.html");
+            header("Location: home.php");
             exit();
         }
         else{

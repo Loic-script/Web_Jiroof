@@ -1,0 +1,9 @@
+<?php
+    session_start();
+    unset($_SESSION["fname"]);
+    unset($_SESSION["name"]);
+    unset($_SESSION["email"]);
+    session_destroy();
+    header("Location:index.html");
+    exit();
+?>
