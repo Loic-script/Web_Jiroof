@@ -150,20 +150,20 @@
               </div>
             </div> -->
 
-            <!-- <div class="flex space-x-4">
-              <a
+            <div class="flex space-x-4">
+              <!-- <a
                 href="#"
                 class="w-10 h-10 flex items-center justify-center text-primary hover:text-white transition-colors"
               >
                 <i class="ri-shopping-cart-2-line ri-lg"></i>
-              </a>
+              </a> -->
               <a
-                href="#"
+                href="profile.php"
                 class="w-10 h-10 flex items-center justify-center text-primary hover:text-white transition-colors"
               >
                 <i class="ri-user-line ri-lg"></i>
               </a>
-            </div> -->
+            </div>
             <form method="POST" action="logout.php" class="flex space-x-4">
             <button
             class="bg-primary text-black font-semibold px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
