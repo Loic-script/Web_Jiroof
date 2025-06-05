@@ -5,27 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jiroof - Produits d'Exception</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: { primary: "#D4AF37", secondary: "#FFFFFF" },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
-          },
-        },
-      };
-    </script>
+    <script src="script/tailwindJS.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
   </head>
   <body>
     <!-- Header -->
@@ -48,14 +28,14 @@
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <a href="#" class="text-4xl font-['Pacifico'] text-primary"
-              >Jiroof</a
+            <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
+              ><img src="pic/logo.png" alt="" id="logo"></a
             >
           </div>
 
           <nav class="hidden md:flex space-x-8">
             <a
-              href="#"
+              href="#accueil"
               class="nav-link text-white hover:text-primary transition-colors"
               >Accueil</a
             >
@@ -102,7 +82,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section w-full min-h-[600px] flex items-center">
+    <section class="hero-section w-full min-h-[600px] flex items-center" id="accueil">
       <div class="container mx-auto px-4 py-20">
         <div class="max-w-2xl">
           <h1
@@ -498,7 +478,7 @@
       </div>
     </footer>
 
-    <script id="mobileMenu" src="script.js">
+    <script id="mobileMenu" src="script/script.js">
       
     </script>
   </body>
