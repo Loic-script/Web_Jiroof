@@ -1,12 +1,15 @@
 :where([class^="ri-"])::before { content: "\f3c2"; }
       body {
-          font-family: 'Poppins', sans-serif;
-          background-color: #000;
-          color: #fff;
+        font-family: 'Poppins', sans-serif;
+        background-color: #000;
+        color: #fff;
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth;
       }
       h1, h2, h3, h4, h5, h6 {
           font-family: 'Playfair Display', serif;
-          
       }
       .hero-section {
           background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://readdy.ai/api/search-image?query=Luxurious%20arrangement%20of%20vanilla%20pods%2C%20cloves%2C%20and%20essential%20oil%20bottles%20on%20a%20black%20background%20with%20golden%20accents.%20The%20image%20shows%20high-quality%20organic%20spices%20and%20aromatic%20oils%20elegantly%20displayed%20with%20subtle%20golden%20light%20reflections.%20Professional%20product%20photography%20with%20dramatic%20lighting%20and%20rich%20textures.&width=1600&height=800&seq=hero123&orientation=landscape');
@@ -50,18 +53,3 @@
           outline: none;
           border-color: #D4AF37;
       }
-
-      /* page  vanille*/
-      .custom-modal .modal-dialog {
-        max-width: 80%;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-  
-      .custom-modal .modal-content {
-        height: 100%;
-      }
-
-      

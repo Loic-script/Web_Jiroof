@@ -40,63 +40,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-    <style>
-      :where([class^="ri-"])::before { content: "\f3c2"; }
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #000;
-        color: #fff;
-        scroll-behavior: smooth;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      h1, h2, h3, h4, h5, h6 {
-          font-family: 'Playfair Display', serif;
-      }
-      .hero-section {
-          background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('https://readdy.ai/api/search-image?query=Luxurious%20arrangement%20of%20vanilla%20pods%2C%20cloves%2C%20and%20essential%20oil%20bottles%20on%20a%20black%20background%20with%20golden%20accents.%20The%20image%20shows%20high-quality%20organic%20spices%20and%20aromatic%20oils%20elegantly%20displayed%20with%20subtle%20golden%20light%20reflections.%20Professional%20product%20photography%20with%20dramatic%20lighting%20and%20rich%20textures.&width=1600&height=800&seq=hero123&orientation=landscape');
-          background-size: cover;
-          background-position: center;
-      }
-      .search-input:focus {
-          outline: none;
-          border-color: #D4AF37;
-      }
-      .nav-link {
-          position: relative;
-      }
-      .nav-link::after {
-          content: '';
-          position: absolute;
-          width: 0;
-          height: 2px;
-          bottom: -4px;
-          left: 0;
-          background-color: #D4AF37;
-          transition: width 0.3s ease;
-      }
-      .nav-link:hover::after {
-          width: 100%;
-      }
-      .product-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-      }
-      .product-card img {
-          transition: transform 0.5s ease;
-      }
-      .product-card:hover img {
-          transform: scale(1.05);
-      }
-      .category-card:hover .category-overlay {
-          opacity: 0.9;
-      }
-      .newsletter-input:focus {
-          outline: none;
-          border-color: #D4AF37;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header -->
@@ -146,13 +90,6 @@
               </div>
             </div> -->
 
-            <div class="flex space-x-4">
-              <a href="login.php"><button
-            class="bg-primary text-black font-semibold px-8 py-3 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-          >
-            Se connecter
-          </button></a>
-            </div>
 
             <button
               class="md:hidden w-10 h-10 flex items-center justify-center text-primary"
