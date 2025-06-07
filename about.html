@@ -89,6 +89,7 @@
             background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
             background-position: center; /* Centre l'image */
             background-attachment: fixed; /* Fixe l'image en arrière-plan */  
+            font-family: 'Poppins', sans-serif;
         }
         footer i{
             color: #D4AF37;
@@ -100,6 +101,60 @@
 </head>
 <body class="bg-black text-white font-sans">
 <section>
+    <header class="bg-black shadow-md" id="nav-bar">
+        <div class="container mx-auto px-4 py-4" >
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
+                ><img src="pic/logo.png" alt="" id="logo"></a
+              >
+            </div>
+  
+            <nav class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
+              <a
+                href="index.html"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Home</a
+              >
+              <a
+                href="index.html"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Products</a
+              >
+              <a
+                href="about.html"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >About</a
+              >
+              <a
+                href="#footer"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Contact</a
+              >
+            </nav>
+  
+            <div class="flex items-center space-x-6">
+              <!-- <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Rechercher..."
+                  class="search-input bg-transparent border border-primary rounded-button px-4 py-2 text-white w-40 md:w-64"
+                />
+                <div
+                  class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-search-line"></i>
+                </div>
+              </div> -->
+  
+  
+              <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
     <a href="index.html" class="text-white px-3 py-2 " style="margin-left: 15px; font-weight: bold; font-size: 2rem;"  >
         <i class="ri-arrow-left-line" id="return"></i>  
     </a>
