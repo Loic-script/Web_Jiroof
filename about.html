@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Notre Histoire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#e6c229',
+                            500: '#D4AF37',
+                            600: '#C9A227',
+                            700: '#b89722',
+                        }
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fadeIn': 'fadeIn 1.5s ease-in-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .gold-gradient-text {
+            background: linear-gradient(90deg, #D4AF37 0%, #F9E076 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: shine 4s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+        .decorative-border {
+            position: relative;
+        }
+        .decorative-border:after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #D4AF37, rgba(212, 175, 55, 0.2));
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Section À propos avec image de fond -->
+    <div class="relative min-h-screen overflow-hidden">
+        <!-- Image de fond avec overlay animé -->
+        
+        <!-- Contenu -->
+        <div class="relative z-10 container mx-auto px-6 py-24 lg:py-36">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-14 text-center">
+                    <span class="text-gold-500 tracking-widest text-xl">ABOUT US </span>
+                    <h1 class="text-5xl md:text-6xl font-serif font-bold mt-4 mb-6 gold-gradient-text decorative-border inline-block">
+                        Jiroof
+                    </h1>
+                </div>
+                
+                <div class="bg-black/60 p-8 lg:p-12 rounded-xl backdrop-blur-lg border border-white/10 shadow-2xl shadow-gold-700/10 transform transition-all hover:shadow-gold-700/20 hover:border-gold-500/30">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <p class="text-sm mb-6 leading-relaxed text-white/60">
+                                <span class="text-lg text-gold-500 font-serif mr-1">B</span>ased in Madagascar, our activities has been dedicated to the production of clove essential oil and the collection of vanilla and clove since XXXX. For decades, we have supplied trusted exporters with high-quality raw and processed spices. Today, we are proud to take the next step – exporting and selling our own products directly to local and international markets, with a special focus on client in the gourmet food service industry. 
+
+                            </p>
+                            
+                            <p class="text-sm mb-6 leading-relaxed text-white/60">
+                                By working hand by hand with local artisans and cooperatives, we ensure each product reflects our values : authenticity, ethical sourcing, and deep respect for the land and people behind every harvest. Our mission is to share the best of Madagascar with the word – responsibility, transparency and sustainability. 
+
+                            </p>
+                        </div>
+                        
+                        <div class="relative group">
+                            <div class="absolute -inset-2 bg-gold-500/20 rounded-xl blur-md group-hover:blur-lg transition-all duration-300"></div>
+                            <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Girofles artisanaux" 
+                                 class="relative w-full h-64 object-cover rounded-lg brightness-90 group-hover:brightness-100 transition-all duration-300">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 pt-8 border-t border-white/10">
+                        <p class="text-lg italic text-center text-gold-400 font-serif max-w-3xl mx-auto">
+                            "From the earth to your table, we preserve the authenticity of an ancient spice while innovating to meet contemporary demands."
+                        </p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- our product -->
+
+    <div class="relative z-10 container mx-auto px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-black/70 p-8 lg:p-12 rounded-xl backdrop-blur-lg border border-white/10 shadow-2xl shadow-gold-700/10 transition-all hover:shadow-gold-700/20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Carte Madagascar -->
+                    <div class="relative group">
+                        <div class="absolute -inset-3 bg-gold-500/20 rounded-xl blur-lg opacity-70 group-hover:opacity-100 transition-all duration-500"></div>
+                        <div class="relative overflow-hidden rounded-lg border border-gold-500/30 h-96">
+                            <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Région Analanjirofo, Madagascar" 
+                                 class="w-full h-full object-cover brightness-90 group-hover:brightness-100 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                                <h3 class="text-2xl font-serif font-bold text-gold-400">Région Analanjirofo</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu texte -->
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-px bg-gold-500 mr-4"></div>
+                            <span class="text-gold-400 font-serif tracking-widest text-sm uppercase">NOTRE TRÉSOR</span>
+                        </div>
+                        
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
+                            <span class="gold-gradient-text">Analanjirofo, MADAGASCAR</span><br>
+                            <span class="text-xl text-gold-400">The Hearth of Spices</span>
+                        </h2>
+                        
+                        <p class="text-lg leading-relaxed text-white/90 mb-6">
+                            <span class="text-3xl text-gold-500 font-serif mr-1 float-left">A</span>nalanjirofo est comme un aîné, sage et profondément enraciné dans la tradition. Située sur la côte luxuriante du nord-est de Madagascar, elle s'épanouit sous les pluies tropicales et dans les sols fertiles, nourrissant certaines des épices les plus fines au monde.
+                        </p>
+                        
+                        <ul class="space-y-3 text-white/80 mb-6">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gold-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Climat tropical idéal pour la culture des girofles</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gold-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Terres volcaniques riches en minéraux</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-gold-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Méthodes de récolte ancestrales</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="pt-6 border-t border-white/10">
+                            <p class="italic text-gold-400 font-serif">
+                                "Nos girofles portent en eux la chaleur du soleil malgache et la sagesse des générations de cultivateurs."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery miniature -->
+                <div class="grid grid-cols-3 gap-4 mt-12">
+                    <div class="overflow-hidden rounded-lg h-32 hover:h-40 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" 
+                             alt="Récolte de girofles" 
+                             class="w-full h-full object-cover hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="overflow-hidden rounded-lg h-40 hover:h-48 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" 
+                             alt="Girofles frais" 
+                             class="w-full h-full object-cover hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="overflow-hidden rounded-lg h-32 hover:h-40 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1601493700101-0e0c5c0b5a2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" 
+                             alt="Marché aux épices" 
+                             class="w-full h-full object-cover hover:scale-110 transition duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
