@@ -1,6 +1,17 @@
 html{
-    font-family: 'Poppins', sans-serif;
+    font-family: "poppins", sans-serif;
 }
+#return{
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    transition: .3s;
+  }
+#return:hover{
+    transform: scale(1.2);
+    color: goldenrod;
+}
+
 .photo-gallery {
     display: grid;
     grid-template-areas: 
@@ -44,6 +55,8 @@ html{
 .photo-container:hover .photo-number {
     color: white;
 }
+
+
 
 @media (max-width: 767px) {
     .photo-gallery {
