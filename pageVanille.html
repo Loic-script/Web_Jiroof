@@ -7,6 +7,8 @@
     <title>Page Vanille</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script src="script/tailwindJS.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
@@ -19,171 +21,93 @@
     
 </head>
 
-<body>
-    <section class="py-20 bg-gray-950">
-        <a href="index.html" class="text-white px-3 py-2 " style="margin-left: 15px; font-weight: bold; font-size: 2rem;"  >
-            <i class="ri-arrow-left-line" id="return"></i>  
-        </a>
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-4 text-white">
-                La Vanille <span class="text-primary">Rouge
-                </span>
-            </h2>
-            <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-                This vanilla is slightly dried and perfect for professionals who work with large volumes. Has good flavor yield and good choice for making natural vanilla products.
-
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
-                <!-- Product 1 -->
-                <div
-                    class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                            alt="Gousses de Vanille Premium" class="w-full h-full object-cover object-top" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Gousses de Vanille Premium
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-3">
-                            Lot de 10 gousses de Madagascar
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <button
-                                class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                                onclick="openPopup()">
-                                Voir le produit
-                            </button>
+<body class="bg-gray-900">
+    <!-- Section Galerie Moderne -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+            <!-- Colonne de gauche (Galerie photo stylée) -->
+            <div class="w-full lg:w-1/2">
+                <div class="photo-gallery">
+                    <!-- Photo 1 (grande) -->
+                    <div class="photo1 photo-container overflow-hidden rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                        <img 
+                            src="pic/red1.jfif" 
+                            alt="Montagne"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-700"
+                        >
+                        <div class="photo-overlay">
+                            <span class="photo-number">Red 1</span>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                            alt="Gousses de Vanille Premium" class="w-full h-full object-cover object-top" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Gousses de Vanille Premium
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-3">
-                            Lot de 10 gousses de Madagascar
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <button
-                                class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                                onclick="openPopup()">
-                                Voir le produit
-                            </button>
+                    
+                    <!-- Photo 2 (petite) -->
+                    <div class="photo2 photo-container overflow-hidden rounded-2xl shadow-xl transform -rotate-1 hover:rotate-0 transition duration-500">
+                        <img 
+                            src="pic/red2.jfif" 
+                            alt="Forêt"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-700"
+                        >
+                        <div class="photo-overlay">
+                            <span class="photo-number">Red 2</span>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                            alt="Gousses de Vanille Premium" class="w-full h-full object-cover object-top" />
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Gousses de Vanille Premium
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-3">
-                            Lot de 10 gousses de Madagascar
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <button
-                                class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                                onclick="openPopup()">
-                                Voir le produit
-                            </button>
+                    
+                    <!-- Photo 3 (petite) -->
+                    <div class="photo3 photo-container overflow-hidden rounded-2xl shadow-xl transform rotate-3 hover:rotate-0 transition duration-500">
+                        <img 
+                            src="pic/red3.jfif" 
+                            alt="Lac"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-700"
+                        >
+                        <div class="photo-overlay">
+                            <span class="photo-number">Red 3</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Colonne de droite (Descriptions stylées) -->
+            <div class="w-full lg:w-1/2 space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Red <span class="text-yellow-600">Vanilla</span> 
+                </h2>
+                
+                <p class="text-lg leading-relaxed">
+                    This vanilla is slightly dried and perfect for professionals who work with large volumes. Has good flavor yield and good choice for making natural vanilla products.
 
-            <!-- other page -->
-            <div class="overlay" id="overlay" onclick="closePopup()"></div>
-
-            <div class="popup" id="popup">
-                <button class="close-btn" onclick="closePopup()">×</button>
-                <h2>Fenêtre centrée</h2>
-                <p>Contenu de la fenêtre avec 80% de largeur et 80vh de hauteur.</p>
-            </div>
-
-            <div class="hr">
-                <div class="hrbord"></div>
-            </div>
-            <!-- part2 -->
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-4 text-white mt-20">
-                La Vanille <span class="text-primary">Noir</span>
-            </h2>
-            <p class="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-                With soft pods, shiny, and full of natural vanillin, this vanilla is carefully prepared in Madagascar using traditional methods. 
-                Ready to use and brings a rich, refined, flavor to high-end products.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2" id="content-cards">
-                <!-- Product 2 -->
-                <div
-                    class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300" id="card">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                            alt="Gousses de Vanille Premium" class="w-full h-full object-cover object-top" />
+                </p>
+                
+                <!-- Description 1 -->
+                <div class="group relative pl-8 border-l-4 border-yellow-600 hover:border-amber-500 transition duration-300">
+                    <div class="absolute -left-4 top-3 h-8 w-8 rounded-full bg-yellow-600 group-hover:bg-amber-500 transition duration-300 flex items-center justify-center">
+                        <span class="text-white group-hover:text-white font-bold">1</span>
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Gousses de Vanille Premium
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-3">
-                            Lot de 10 gousses de Madagascar
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <button
-                                class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                                onclick="openPopup()">
-                                Voir le produit
-                            </button>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Red 1</h3>
+                    <p>140 000 MGA / kg</p>
                 </div>
-                <div
-                    class="product-card bg-black border border-gray-800 rounded overflow-hidden shadow-lg transition-all duration-300" id="card">
-                    <div class="h-64 overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=Premium%20Madagascar%20vanilla%20pods%20tied%20with%20golden%20thread%20on%20a%20black%20surface.%20Close-up%20detailed%20view%20showing%20the%20oily%20texture%20and%20seeds%20of%20high-quality%20vanilla%20beans.%20Luxury%20food%20ingredient%20photography%20with%20dramatic%20lighting.&width=500&height=500&seq=prod1&orientation=squarish"
-                            alt="Gousses de Vanille Premium" class="w-full h-full object-cover object-top" />
+                
+                <!-- Description 2 -->
+                <div class="group relative pl-8 border-l-4 border-yellow-600 hover:border-amber-500 transition duration-300">
+                    <div class="absolute -left-4 top-3 h-8 w-8 rounded-full bg-yellow-600 group-hover:bg-amber-500 transition duration-300 flex items-center justify-center">
+                        <span class="text-white group-hover:text-white font-bold">2</span>
                     </div>
-                    <div class="p-5">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Gousses de Vanille Premium
-                        </h3>
-                        <p class="text-gray-400 text-sm mb-3">
-                            Lot de 10 gousses de Madagascar
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <button
-                                class="bg-primary text-black px-3 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap"
-                                onclick="openPopup()">
-                                Voir le produit
-                            </button>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Red 2</h3>
+                    <p>ROUGE 2 : 125 000 MGA / kg
+                    </p>
                 </div>
-            </div>
-
-            <!-- other page -->
-            <div class="overlay" id="overlay" onclick="closePopup()"></div>
-
-            <div class="popup" id="popup">
-                <button class="close-btn" onclick="closePopup()">×</button>
-                <h2>Fenêtre centrée</h2>
-                <p>Contenu de la fenêtre avec 80% de largeur et 80vh de hauteur.</p>
-            </div>
+                
+                <!-- Description 3 -->
+                <div class="group relative pl-8 border-l-4 border-yellow-600 hover:border-amber-500 transition duration-300">
+                    <div class="absolute -left-4 top-3 h-8 w-8 rounded-full bg-yellow-600 group-hover:bg-amber-500 transition duration-300 flex items-center justify-center">
+                        <span class="text-white group-hover:text-white font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Red 3</h3>
+                    <p>ROUGE 3 : 100 000 MGA / kg
+                    </p>
+        </div>
     </section>
 </body>
+</html>
 <script src="script.js"></script>
 
 </html>
