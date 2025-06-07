@@ -4,7 +4,7 @@ html{
 #return{
     position: fixed;
     left: 2rem;
-    top: 2rem;
+    top: 5rem;
     transition: .3s;
     z-index: 1000;
   }
@@ -12,6 +12,10 @@ html{
     transform: scale(1.2);
     color: goldenrod;
 }
+#nav-bar{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.518)
+}
+
 
 .photo-gallery {
     display: grid;
