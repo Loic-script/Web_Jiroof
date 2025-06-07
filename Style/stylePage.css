@@ -6,6 +6,7 @@ html{
     left: 2rem;
     top: 2rem;
     transition: .3s;
+    z-index: 1000;
   }
 #return:hover{
     transform: scale(1.2);
