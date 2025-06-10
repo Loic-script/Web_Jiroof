@@ -31,6 +31,7 @@ html{
 .photo-container {
     position: relative;
     overflow: hidden;
+    border-radius: 1rem 0 1rem 0;
 }
 
 .photo-overlay {
@@ -66,6 +67,10 @@ html{
     height: 1px;
     background-color: rgba(128, 128, 128, 0.518);
     margin: 2rem 0;
+}
+#image-left{
+    display: flex;
+    gap: 1rem;
 }
 
 @media (max-width: 767px) {

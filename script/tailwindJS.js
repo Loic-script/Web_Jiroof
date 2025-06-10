@@ -1,7 +1,7 @@
 tailwind.config = {
     theme: {
         extend: {
-            colors: { primary: "#D4AF37", secondary: "#FFFFFF" },
+            colors: { primary: "#ca8a04", secondary: "#FFFFFF" },
             borderRadius: {
                 none: "0px",
                 sm: "4px",
