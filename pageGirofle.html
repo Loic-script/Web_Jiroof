@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Vanille</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="script/tailwindJS.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/stylePage.css">
+    <style>
+        footer i{
+            color: goldenrod;
+        }
+    </style>
+    
+</head>
+
+<body class="bg-black" id="body">
+    <a href="index.html" class="text-white px-3 py-2 " style="margin-left: 15px; font-weight: bold; font-size: 2rem;"  >
+        <i class="ri-arrow-left-line" id="return"></i>  
+    </a>
+    <header class="bg-black shadow-md" id="nav-bar">
+        <div class="container mx-auto px-4 py-4" >
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
+                ><img src="pic/logo.png" alt="" id="logo"></a
+              >
+            </div>
+  
+            <nav class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
+              <a
+                href="#home"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Home</a
+              >
+              <a
+                href="#our-products"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Products</a
+              >
+              <a
+                href="about.html"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >About</a
+              >
+              <a
+                href="#footer"
+                class="nav-link text-white hover:text-yellow-600 transition-colors"
+                >Contact</a
+              >
+            </nav>
+  
+            <div class="flex items-center space-x-6">
+              <!-- <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Rechercher..."
+                  class="search-input bg-transparent border border-primary rounded-button px-4 py-2 text-white w-40 md:w-64"
+                />
+                <div
+                  class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-search-line"></i>
+                </div>
+              </div> -->
+  
+  
+              <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+
+      <footer class="bg-black pt-16 pb-8 border-t border-gray-800" id="footer"> 
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <!-- Company Info -->
+            <div>
+              <a
+                href="#"
+                class="text-3xl font-['Pacifico'] text-yellow-600 mb-6 inline-block"
+                ><img src="pic/logo.png" id="logo" alt=""></a
+              >
+              <p class="text-gray-300 mb-6">
+                Specialist in high-quality spices and essential oils.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center text-yellow-600 hover:text-white border border-yellow-600 rounded-full transition-colors"
+                >
+                  <i class="ri-instagram-line text-primary"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center text-yellow-600 hover:text-white border border-yellow-600 rounded-full transition-colors"
+                >
+                  <i class="ri-linkedin-line text-primary"></i>
+                </a>
+              </div>
+            </div>
+  
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-gray-300 hover:text-yellow-600 transition-colors"
+                    >Home</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Categories -->
+            <div>
+              <h4 class="text-xl font-bold text-white mb-6">Categories</h4>
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="pageVanille.html"
+                    class="text-gray-300 hover:text-yellow-600 transition-colors"
+                    >Vanilla</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pageGirofle.html"
+                    class="text-gray-300 hover:text-yellow-600 transition-colors"
+                    >Clove</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="pageHuileEssentielle.html"
+                    class="text-gray-300 hover:text-yellow-600 transition-colors"
+                    >Essential Oils</a
+                  >
+                </li>
+                
+              </ul>
+            </div>
+  
+            <!-- Contact -->
+            <div>
+              <h4 class="text-xl font-bold text-white mb-6">Contact</h4>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1"
+                  >
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >101 Antananarivo, MADAGASCAR</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1"
+                  >
+                    <i class="ri-mail-line"></i>
+                  </div>
+                  <span class="text-gray-300">jiroof.cny@gmail.com</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1"
+                  >
+                    <i class="ri-phone-line"></i>
+                  </div>
+                  <span class="text-gray-300">+ 261 32 98 064 36</span>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary mr-3 mt-1"
+                  >
+                    <i class="ri-whatsapp-line"></i>
+                  </div>
+                  <span class="text-gray-300"
+                    >+1 (506) 312-4112</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div
+            class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+          >
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              &copy; 2025 Jiroof. All rights reserved.
+            </p>
+            
+  
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+<script src="script.js"></script>
+
+</html>
