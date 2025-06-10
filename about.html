@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos - Notre Histoire</title>
+    <title>test</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style/style.css">
@@ -81,10 +81,7 @@
         body{
             width: 100%;
             height: 100vh;
-            background-image: url('pic/bg_about3.jpeg');
-            background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
-            background-position: center; /* Centre l'image */
-            background-attachment: fixed; /* Fixe l'image en arrière-plan */  
+            background-color: black;  
             font-family: 'Poppins', sans-serif;
         }
         footer i{
@@ -95,201 +92,124 @@
         }
     </style>
 </head>
-<body class="bg-black text-white font-sans">
-<section>
-    <header class="bg-black shadow-md" id="nav-bar">
-        <div class="container mx-auto px-4 py-4" >
-          <div class="flex justify-between items-center">
-            <div class="flex items-center">
-              <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
-                ><img src="pic/logo.png" alt="" id="logo"></a
-              >
-            </div>
-  
-            <nav class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
-              <a
-                href="index.html"
-                class="nav-link text-white hover:text-yellow-600 transition-colors"
-                >Home</a
-              >
-              <a
-                href="index.html"
-                class="nav-link text-white hover:text-yellow-600 transition-colors"
-                >Products</a
-              >
-              <a
-                href="about.html"
-                class="nav-link text-white hover:text-yellow-600 transition-colors"
-                >About</a
-              >
-              <a
-                href="#footer"
-                class="nav-link text-white hover:text-yellow-600 transition-colors"
-                >Contact</a
-              >
-            </nav>
-  
-            <div class="flex items-center space-x-6">
-              <!-- <div class="relative">
-                <input
-                  type="text"
-                  placeholder="Rechercher..."
-                  class="search-input bg-transparent border border-primary rounded-button px-4 py-2 text-white w-40 md:w-64"
-                />
-                <div
-                  class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-primary"
-                >
-                  <i class="ri-search-line"></i>
-                </div>
-              </div> -->
-  
-  
-              <button id="menu-toggle" class="md:hidden text-white text-2xl">
-                ☰
-              </button>
-            </div>
-          </div>
+<body class="bg-black">
+  <header class="bg-black shadow-md" id="nav-bar">
+    <div class="container mx-auto px-4 py-4" >
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#accueil" class="text-4xl font-['Pacifico'] text-primary"
+            ><img src="pic/logo.png" alt="" id="logo"></a
+          >
         </div>
-      </header>
-    <a href="index.html" class="text-white px-3 py-2 " style="margin-left: 15px; font-weight: bold; font-size: 2rem;"  >
-        <i class="ri-arrow-left-line" id="return"></i>  
-    </a>
-    <!-- Section À propos avec image de fond -->
-    <div class="relative min-h-screen overflow-hidden" >
-        <!-- Image de fond avec overlay animé -->
-        
-        <!-- Contenu -->
-        <div class="relative z-10 container mx-auto px-6 py-24 lg:py-14.4">
-            <div class="max-w-8xl mx-auto">
-                <div class="mb-14 text-center">
-                    <span class="text-gold-500 tracking-widest text-xl"></span>
-                    <h1 class="text-5xl md:text-6xl font-serif font-bold mt-4 mb-6 text-yellow-600 decorative-border inline-block">
 
-                        ABOUT US
-                    </h1>
-                </div>
+        <nav class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 right-4 bg-black md:bg-transparent border md:border-0 border-gray-800 md:p-0 p-4 rounded shadow-lg md:shadow-none space-y-4 md:space-y-0 z-50">
+          <a
+            href="index.html"
+            class="nav-link text-white hover:text-yellow-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="index.html"
+            class="nav-link text-white hover:text-yellow-600 transition-colors"
+            >Products</a
+          >
+          <a
+            href="about.html"
+            class="nav-link text-white hover:text-yellow-600 transition-colors"
+            >About</a
+          >
+          <a
+            href="#footer"
+            class="nav-link text-white hover:text-yellow-600 transition-colors"
+            >Contact</a
+          >
+        </nav>
 
-                <div class="bg-black/60 p-8 lg:p-12 rounded-xl backdrop-blur-lg border border-white/10 ">
-
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <div>
-                          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
-                            <span class="gold-gradient-text" style="font-size: 2.2rem;">HISTORICAL</span><br>
-                          </h2>
-                          <p class="text-m mb-6 leading-relaxed text-white/60">
-                              <span class="text-lg text-gold-500 font-serif mr-1">B</span>ased in Madagascar, our activities has been dedicated to the production of clove essential oil and the collection of vanilla and clove since XXXX. For decades, we have supplied trusted exporters with high-quality raw and processed spices. Today, we are proud to take the next step – exporting and selling our own products directly to local and international markets, with a special focus on client in the gourmet food service industry. 
-
-                          </p>
-                            
-                          <p class="text-m mb-6 leading-relaxed text-white/60">
-                            By working hand by hand with local artisans and cooperatives, we ensure each product reflects our values : authenticity, ethical sourcing, and deep respect for the land and people behind every harvest. Our mission is to share the best of Madagascar with the word – responsibility, transparency and sustainability. 
-
-                            </p>
-                        </div>
-                        
-                        <div class="relative group">
-                            <div class="absolute -inset-2 rounded-xl blur-md group-hover:blur-lg transition-all duration-300"></div>
-                            <img src="pic/aboutus.jpeg" 
-                                 alt="Girofles artisanaux" 
-                                 class="relative w-full h-64 object-cover rounded-lg brightness-90 group-hover:brightness-100 transition-all duration-300">
-                        </div>
-                    </div>
-
-                </div>
+        <div class="flex items-center space-x-6">
+          <!-- <div class="relative">
+            <input
+              type="text"
+              placeholder="Rechercher..."
+              class="search-input bg-transparent border border-primary rounded-button px-4 py-2 text-white w-40 md:w-64"
+            />
+            <div
+              class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-primary"
+            >
+              <i class="ri-search-line"></i>
             </div>
+          </div> -->
+
+
+          <button id="menu-toggle" class="md:hidden text-white text-2xl">
+            ☰
+          </button>
         </div>
+      </div>
     </div>
-
-
-
-
-
-    <!-- our product -->
-    <div class="relative z-1 container mx-auto px-6 py-16">
-        <div class="max-w-8xl mx-auto">
-
-            <div class="bg-black/70 p-8 lg:p-12 rounded-xl backdrop-blur-lg border border-white/10">
-                <div class="grid md:grid-cols-2 gap-12 items-center"> 
-                    <div class="relative group">
-                        <div class="absolute -inset-3 rounded-xl blur-lg opacity-70 group-hover:opacity-100 transition-all duration-500"></div>
-                        <div class="relative overflow-hidden rounded-lg border border-gold-500/30 h-96">
-                            <img src="pic/aboutprod2.jpeg" 
-                                 alt="Région Analanjirofo, Madagascar" 
-                                 class="w-full h-full object-cover brightness-90 group-hover:brightness-100 transition duration-700">
-
-                        </div>
-                    </div>
-
-                    <!-- Contenu texte -->
-                    <div>
-
-                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
-                            <span class="gold-gradient-text" style="font-size: 2.2rem;">ABOUT OUR <br> PRODUCTS</span><br>
-                        </h2>
-                        
-                        <p class="text-m leading-relaxed text-white/60 mb-6">
-                          <span class="text-lg text-gold-500 font-serif mr-1">A</span>nalanjirofo is like an elder, wise and deeply rooted in tradition. Situated on Madagascar’s lush northeast coast, she thrives in the tropical rains and fertile soil, nurturing some of the word’s finest spices.
-                        </p>
-                    </div>
-                </div>
-
-
-                
-                
-                
-                <!-- Gallery miniature -->
-                
-              </div>
-            </div>
+  </header>
+<a href="index.html" class="text-white px-3 py-2 " style="margin-left: 15px; font-weight: bold; font-size: 2rem;"  >
+    <i class="ri-arrow-left-line" id="return"></i>  
+</a>
+  <!-- Section 1 - Photo de couverture avec About Us -->
+  <section class="relative h-screen w-full">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+           alt="Couverture" 
+           class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center ">
+          <div class="w-1/2 p-20">
+              <h1 class="text-5xl font-bold mb-6">ABOUT US</h1>
+              <p class="text-xl mb-8">We are a family-owned business passionate about Madagascar’s natural treasures, specializing in premium vanilla, cloves, and essential oils.</p>
           </div>
+      </div>
+  </section>
 
+  <!-- Section 2 - Photo gauche, description droite -->
+  <section class="flex items-center py-20 px-10 ">
+      <div class="w-1/2 pr-10">
+          <img src="pic/aboutus.jpeg" 
+               alt="Section 2" 
+               class="w-full h-auto rounded-lg shadow-2xl">
+      </div>
+      <div class="w-1/2 pl-10">
+          <h2 class="text-yellow-600 text-4xl font-semibold mb-4">HISTORICAL</h2>
+          <p class="text-md mb-6"><span class="text-xl text-gold-500 font-serif mr-1">B</span>ased in Madagascar, our activities has been dedicated to the production of clove essential oil and the collection of vanilla and clove since XXXX. For decades, we have supplied trusted exporters with high-quality raw and processed spices. Today, we are proud to take the next step – exporting and selling our own products directly to local and international markets, with a special focus on client in the gourmet food service industry. </p>
+          <p class="text-md mb-6">By working hand by hand with local artisans and cooperatives, we ensure each product reflects our values : authenticity, ethical sourcing, and deep respect for the land and people behind every harvest. Our mission is to share the best of Madagascar with the word – responsibility, transparency and sustainability.</p>
+      </div>
+  </section>
 
+  <!-- Section 3 - Photo droite, description gauche -->
+  <section class="flex items-center py-20 px-10 bg-gray-900">
+      <div class="w-1/2 pr-10">
+          <h2 class="text-yellow-600 text-4xl font-semibold mb-4">ABOUT OUR <br> PRODUCTS</span></h2>
+          <p class="text-md mb-6"><span class="text-xl text-gold-500 font-serif mr-1">A</span>nalanjirofo is like an elder, wise and deeply rooted in tradition. Situated on Madagascar’s lush northeast coast, she thrives in the tropical rains and fertile soil, nurturing some of the word’s finest spices.</p>
+      </div>
+      <div class="w-1/2 pl-10">
+          <img src="pic/aboutprod2.jpeg" 
+               alt="Section 3" 
+               class="w-full h-auto rounded-lg shadow-2xl">
+      </div>
+  </section>
 
+  <!-- Section 4 - Photo gauche, description droite -->
+  <section class="flex items-center py-20 px-10">
+      <div class="w-1/2 pr-10">
+          <img src="pic/aboutwhy.jpeg" 
+               alt="Section 4" 
+               class="w-full h-auto rounded-lg shadow-2xl">
+      </div>
+      <div class="w-1/2 pl-10">
+          <h2 class="text-yellow-600 text-4xl font-semibold mb-4">WHY CHOOSE OUR PRODUCT ?</h2>
+          <ul>
 
-
-
-          <!-- 3page -->
-          <div class="relative z-10 container mx-auto px-6 py-16">
-            <div class="max-w-8xl mx-auto">
-    
-              <div class="bg-black/60 p-8 lg:p-12 rounded-xl backdrop-blur-lg border border-white/10 ">
-
-
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div>
-                      <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
-                        <span class="gold-gradient-text" style="font-size: 2.2rem;">WHY CHOOSE OUR PRODUCT ?</span><br>
-                      </h2>
-                      <ul>
-                            <p class="text-m mb-2 leading-relaxed text-white/60"><span>&rarr;</span> A product line tailored for our client : personalized and reliable  service
-                            </p>
-                            <p class="text-m mb-2 leading-relaxed text-white/60"><span>&rarr;</span> 100% Artisanal Quality : Grown and hand – processed in Madagascar for bold, natural flavors</p>
-                            <p class="text-m mb-2 leading-relaxed text-white/60"><span>&rarr;</span> Ethical sourcing : Fair trade practices that support local farmers and communities</p>
-                            <p class="text-m mb-2 leading-relaxed text-white/60"><span>&rarr;</span> Full transparency : Clear origin and quality you can trust from farm to shipment</p>
-                            <p class="text-m mb-6 leading-relaxed text-white/60"><span>&rarr;</span> Authentic Alternative : A human story behind every product – honest and unique</p>
-                      </ul>
-                    </div>
-                    
-                    <div class="relative group">
-                        <div class="absolute -inset-2 rounded-xl blur-md group-hover:blur-lg transition-all duration-300"></div>
-                        <img src="pic/aboutwhy.jpeg" 
-                             alt="Girofles artisanaux" 
-                             class="relative w-full h-64 object-cover rounded-lg brightness-90 group-hover:brightness-100 transition-all duration-300">
-                    </div>
-                </div>
-                
-
-            </div>
-                </div>
-              </div>
-
-
-
-
-
-
-</section> 
-<footer class="bg-black pt-16 pb-8 border-t border-gray-800" id="footer"> 
+            <p class="text-md mb-6"><span>&rarr;</span> 100% Artisanal Quality : Grown and hand – processed in Madagascar for bold, natural flavors</p>
+            <p class="text-md mb-6"><span>&rarr;</span> Ethical sourcing : Fair trade practices that support local farmers and communities</p>
+            <p class="text-md mb-6"><span>&rarr;</span> Full transparency : Clear origin and quality you can trust from farm to shipment</p>
+            <p class="text-md mb-6"><span>&rarr;</span> Authentic Alternative : A human story behind every product – honest and unique</p>
+          </ul>
+            
+      </div>
+  </section>
+  <footer class="bg-black pt-16 pb-8 border-t border-gray-900" id="footer"> 
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <!-- Company Info -->
@@ -416,7 +336,6 @@
       </div>
     </div>
   </footer>
-    
-      <script id="mobileMenu" src="script/script.js"></script>
 </body>
+<script id="mobileMenu" src="script/script.js"></script>
 </html>
